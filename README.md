@@ -2,6 +2,12 @@
 
 A simple Python tool to visualize and manage connections between Markdown notes using `[[wiki-links]]`.
 
+## Demo
+
+Watch how it works:
+
+[![Note Tree Generator Demo](https://img.youtube.com/vi/6dqAP_frFeI/0.jpg)](https://www.youtube.com/watch?v=6dqAP_frFeI)
+
 ## Features
 
 - Generate hierarchical trees of connected notes
@@ -66,4 +72,4 @@ Example structure:
    1. [[Sub Note A]]
    2. [[Sub Note B]]
 2. [[Second Note]]
-```
+````
