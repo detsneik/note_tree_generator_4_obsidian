@@ -1,41 +1,69 @@
 # Note Tree Generator
 
-A simple Python application that helps you visualize and manage the connections between your Markdown notes that use the `[[wiki-link]]` format.
+A simple Python tool to visualize and manage connections between Markdown notes using `[[wiki-links]]`.
 
 ## Features
 
-- Generate a hierarchical tree view of your connected notes
-- Search through your notes easily
-- Copy the tree structure to clipboard
-- Create ZIP files containing all connected notes
-- Maintains the original order of links in your notes
+- Generate hierarchical trees of connected notes
+- Search and filter notes easily
+- Copy tree structure to clipboard
+- Create ZIP backups of connected notes
+- Preserve original link order
 - Alphabetically sorted file list
 
 ## Requirements
 
-- Python 3.x
-- Tkinter (usually comes with Python)
+- Python 3.x (with Tkinter)
 
-## How to Use
+## Installation
 
-1. Run the program:
-   ```
+### Windows
+1. Install Python:
+   - Download from [Python.org](https://www.python.org/downloads/)
+   - Run installer and check "Add Python to PATH"
+   - Click "Install Now"
+
+2. Get Note Tree Generator:
+   - Download and extract ZIP from this repository
+   - Open Command Prompt (Win + R, type `cmd`, press Enter)
+   ```cmd
+   cd path\to\extracted\folder
    python ntg4o.py
    ```
 
-2. Click "Buscar" (Search) to select your notes folder
-3. Select a note from the list to see its connection tree
-4. Use the search bar to filter your notes
-5. Use the buttons to:
-   - Copy the tree structure to clipboard
-   - Create a ZIP file with all connected notes
+### Linux
+1. Install Python (if not installed):
+   ```bash
+   sudo apt install python3 python3-tk
+   ```
+
+2. Run the program:
+   ```bash
+   python3 ntg4o.py
+   ```
+
+## Quick Start
+
+1. Launch the program
+2. Click "Search" to select your notes folder
+3. Select any note to view its connections
+4. Use available actions:
+   - **Copy**: Get tree structure to clipboard
+   - **ZIP**: Create backup with all connected notes
 
 ## Note Format
 
-The program works with Markdown files (.md) that use the double-bracket wiki-link format:
+Uses standard Markdown files (.md) with wiki-style links:
 
 ```markdown
 [[Note Name]]
 ```
 
-It will generate a tree structure showing all the connections between your notes, maintaining the order in which links appear in your files.
+Example structure:
+```markdown
+# Topic
+1. [[First Note]]
+   1. [[Sub Note A]]
+   2. [[Sub Note B]]
+2. [[Second Note]]
+```
